@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <span class="slam"><img src="quino.png"></span>
+  <style>
+      body {
+  background: url(table.jpg);
+  margin: 0;
+  overflow: hidden;
+  animation: rattle 0.2s;
+  animation-delay: 1s;
+  margin-top: 80px;
+  margin-left: 350px;
+  margin-right: 350px;
+}
+
+.js-type-writer {
+  font-size: 20px;
+  font-family: 'Copperplate', fantasy;
+  color: #170a03;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.js-type-writer > span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+.slam
+{
+animation: slam 1s;
+animation-timing-function: ease-in;
+color: #C41818;
+display: block;
+font-family: "Source Sans Pro", sans-serif;
+font-size: 13em;
+font-weight: 900;
+position: relative;
+text-align: center;
+text-transform: uppercase;
+
+}
+
+@keyframes slam {
+0%
+{
+  transform: scale(10, 10);
+  opacity: 0;
+}
+
+40%
+{
+  opacity: 0;
+}
+
+100%
+{
+  transform: scale(1, 1);
+  opacity: 1;
+}
+}
+
+@keyframes rattle {
+0% { margin-top: 0; margin-left: 0; }
+10% { margin-top: -5px; margin-left: 0; }
+20% { margin-top: 0; margin-left: -5px; }
+30% { margin-top: 5px; margin-left: 0; }
+40% { margin-top: 0; margin-left: 5px; }
+50% { margin-top: -2px; margin-left: 0; }
+60% { margin-top: 0; margin-left: -2px; }
+70% { margin-top: 2px; margin-left: 0; }
+80% { margin-top: 0; margin-left: 2px; }
+90% { margin-top: -1px; margin-left: 0; }
+100% { margin-top: 0; margin-left: 0; }
+}
+  
+  @keyframes caret {
+    50% {
+      border-color: transparent;
+    }
+  }
+    </style>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <center>
+    <body>
+       
+        <h1 class="js-type-writer">Qunioa <br>One cup cooked provides about 8 grams of protein and 5 grams of fiber.</h1>
+
+    </center>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="js.js" async defer></script>
+    </body>
+</html>
